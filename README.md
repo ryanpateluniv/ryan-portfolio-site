@@ -2,7 +2,7 @@
 
 Personal portfolio website built and designed from scratch to showcase my work in machine learning, systems, and applied AI.
 
-🔗 Live Site: https://yourdomain.com  
+🔗 Live Site: [https://ryan-portfolio-site.com](https://ryan-portfolio-site.vercel.app/)  
 📍 Computer Science — Arizona State University  
 📊 GPA: 4.0  
 
