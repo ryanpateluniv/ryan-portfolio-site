@@ -1,0 +1,83 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   app/globals.css
+   Design tokens live here as CSS custom properties.
+   To retheme the entire site, only edit the :root block below.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* ── Backgrounds ─────────────────────────────────────────────────────────── */
+  --bg-primary:   #111214;   /* Deep charcoal — main page background          */
+  --bg-secondary: #17191c;   /* Card / raised surface                         */
+  --bg-tertiary:  #1e2124;   /* Subtle hover state                            */
+
+  /* ── Text ────────────────────────────────────────────────────────────────── */
+  --text-primary:   #e8eaed;  /* Main readable text                            */
+  --text-secondary: #9aa0aa;  /* Supporting copy                               */
+  --text-muted:     #5a6272;  /* Labels, meta info                             */
+
+  /* ── Accent — muted slate blue ───────────────────────────────────────────── */
+  /* ✏️  Swap these two lines to change the accent color across the whole site  */
+  --accent:       #6e8cba;   /* Primary accent (links, highlights)            */
+  --accent-muted: #4a6080;   /* Softer accent (borders, tags)                 */
+
+  /* ── Borders ─────────────────────────────────────────────────────────────── */
+  --border-subtle: rgba(255,255,255,0.06);
+
+  /* ── Fonts ───────────────────────────────────────────────────────────────── */
+  --font-display: 'Syne', sans-serif;
+  --font-sans:    'DM Sans', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+}
+
+/* ── Base resets ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+/* ── Scroll offset for fixed nav ─────────────────────────────────────────── */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ── Selection ───────────────────────────────────────────────────────────── */
+::selection {
+  background: var(--accent-muted);
+  color: var(--text-primary);
+}
+
+/* ── Scrollbar (Webkit) ──────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+  background: var(--accent-muted);
+  border-radius: 3px;
+}
+
+/* ── Animation utilities ─────────────────────────────────────────────────── */
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+  .opacity-0-start   { opacity: 0; }           /* pair with animate-fade-up   */
+}
