@@ -26,7 +26,7 @@ export const personal = {
     "Quantitative Modeling & Time-Series Analysis",
     "Systems Thinking & Optimization",
   ],
-  email: "ryanpateluniv@gmail.com",
+  email: "official@ryanvpatel.com",
 } as const;
 
 // ── Social Links ──────────────────────────────────────────────────────────────
