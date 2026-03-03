@@ -79,6 +79,16 @@ export const projects: Project[] = [
     tech: ["Python", "TensorFlow", "Keras", "Pandas"],
     githubUrl: "https://github.com/ryanpateluniv/stock-price-predictor",
   },
+  {
+  id: "r-stratos",
+  title: "R-Stratos — Interactive Global Intelligence Dashboard",
+  description:
+    "Built a full-stack web application featuring a real-time 3D globe interface with location-based intelligence panels. Users can explore cities and countries to access structured news aggregation, live weather data, and publicly available webcam feeds. Developed with a modular React frontend and Node.js/Express backend including API integration, caching, and rate limiting.",
+  tech: ["React", "Node.js", "Express", "Globe.gl", "REST APIs", "Full-Stack Development"],
+  githubUrl: "https://github.com/ryanpateluniv/R-Stratos",
+  featured: true,
+}
+
 ];
 
 // ── Achievements ──────────────────────────────────────────────────────────────
