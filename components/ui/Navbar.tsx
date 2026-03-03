@@ -41,7 +41,7 @@ export default function Navbar() {
           className="font-mono text-sm tracking-wider transition-colors hover:text-[var(--accent)]"
           style={{ color: "var(--text-primary)", fontFamily: "var(--font-display)" }}
         >
-          {personal.name.split(" ")[0].toLowerCase()}
+          {personal.name.split(" ")[0]}
           <span style={{ color: "var(--accent)" }}>.</span>
         </Link>
 
