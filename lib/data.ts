@@ -60,7 +60,7 @@ export const projects: Project[] = [
       "Implemented a multi-layer decoder-only transformer in PyTorch from first principles, including embeddings, multi-head self-attention, feedforward blocks, and layer normalization. Built a full training pipeline with batching, optimization, evaluation, and autoregressive text generation. Conducting experiments on training dynamics and generalization behavior.",
     tech: ["Python", "PyTorch", "Deep Learning"],
     githubUrl: "https://github.com/ryanpateluniv/transformer-from-scratch",
-    featured: true,
+    featured: false,
   },
   {
     id: "yolo-object-detection",
@@ -78,6 +78,7 @@ export const projects: Project[] = [
       "Built an LSTM-based time-series model predicting next-day stock direction using nine engineered technical indicators (RSI, MACD, Bollinger Bands). Implemented a custom loss function optimizing for trading profitability and applied time-series cross-validation, achieving 55% directional accuracy and 1.28% MAE.",
     tech: ["Python", "TensorFlow", "Keras", "Pandas"],
     githubUrl: "https://github.com/ryanpateluniv/stock-price-predictor",
+    featured: true
   },
   {
   id: "r-stratos",
@@ -95,11 +96,43 @@ export const projects: Project[] = [
 // ✏️  Add a new object to add an achievement. Categories: Academic | Hackathon | Certification | Award | Leadership
 export const achievements: Achievement[] = [
   {
+    id: "jpmorgan-quant-program",
+    title: "JPMorgan Chase Quantitative Research Experience (Forage)",
+    description:
+      "Modeled probability of default on a loan portfolio and applied dynamic programming techniques to categorize FICO scores for predictive modeling.",
+    category: "Certification",
+    date: "Dec 2025",
+  },
+  {
     id: "asu-deans-list",
     title: "Dean’s List — Arizona State University",
-    description: "Maintained a 4.0 (4.2 internal) GPA during first semester in Computer Science.",
+    description: "Maintained a 4.0 (4.2 internal) GPA during first semester (Fall 2025) in Computer Science.",
     category: "Academic",
-    date: "Fall 2025",
+    date: "Dec 2025",
+  },
+  {
+  id: "aws-genai-foundations",
+  title: "AWS Generative AI Foundations",
+  description:
+    "Completed certifications in Foundation Models & LLMs, Introduction to GenAI, and Prompt Engineering.",
+  category: "Certification",
+  date: "Nov 2025",
+  },
+  {
+  id: "coursera-business-analysis",
+  title: "Business Analysis & Process Management",
+  description:
+    "Completed project-based certification focused on structured problem-solving, process optimization, and analytical decision-making.",
+  category: "Certification",
+  date: "Dec 2024",
+  },
+  {
+    id: "coursera-investment-risk",
+    title: "Investment Risk Management",
+    description:
+      "Completed certification covering risk assessment principles, financial modeling fundamentals, and quantitative evaluation techniques.",
+    category: "Certification",
+    date: "Dec 2024",
   },
   {
     id: "sof-english-olympiad",
@@ -116,23 +149,7 @@ export const achievements: Achievement[] = [
       "Achieved top performance in national-level computer science competition.",
     category: "Award",
     date: "2014-15",
-  },
-  {
-    id: "icpc-regional",
-    title: "ICPC Regional Qualifier",
-    description:
-      "Qualified for the ICPC North America Regional contest, placing in the top 20% among university teams.",
-    category: "Award",
-    date: "Nov 2024",
-  },
-  {
-    id: "jpmorgan-quant-program",
-    title: "JPMorgan Chase Quantitative Research Experience (Forage)",
-    description:
-      "Modeled probability of default on a loan portfolio and applied dynamic programming techniques to categorize FICO scores for predictive modeling.",
-    category: "Certification",
-    date: "Dec 2025",
-  },
+  }
 ];
 
 // ── Skills ────────────────────────────────────────────────────────────────────
