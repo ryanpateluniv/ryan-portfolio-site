@@ -91,7 +91,7 @@ export const projects: Project[] = [
   },
   {
   id: "Life OS",
-  title: "Life OS — AI-Powered Personal Life Management Web App",
+  title: "Life OS — AI-Powered Personal Life Management App",
   description:
     "AI-powered personal life management web app built with Next.js 16, TypeScript, and Tailwind CSS. Features four modules: a smart scheduler with calendar view and AI-generated time-block plans, a spend tracker with budget alerts and AI roast reports, a Health OS tracking workouts, nutrition, sleep, and mental wellness, and a CS Learning Tracker with resource management and AI study plans. Powered by five specialized Llama 3.3 agents (via Groq) for domain-specific insights across each module. Includes a badge/achievement system, shareable badge cards, and is deployed as a PWA installable on mobile.",
    tech: ["Next.js", "Typescript", "Tailwind CSS", "shadcn/ui", "Prisma", "SQLite", "Groq", "Llama 3.3"],
