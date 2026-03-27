@@ -60,7 +60,6 @@ export const projects: Project[] = [
       "Implemented a multi-layer decoder-only transformer in PyTorch from first principles, including embeddings, multi-head self-attention, feedforward blocks, and layer normalization. Built a full training pipeline with batching, optimization, evaluation, and autoregressive text generation. Conducting experiments on training dynamics and generalization behavior.",
     tech: ["Python", "PyTorch", "Deep Learning"],
     githubUrl: "https://github.com/ryanpateluniv/transformer-from-scratch",
-    featured: false,
   },
   {
     id: "yolo-object-detection",
@@ -69,7 +68,6 @@ export const projects: Project[] = [
       "Developed an interactive web application for real-time object detection on images and videos using YOLOv8 and OpenCV. Includes adjustable confidence thresholds, model size selection, and visual comparison tools for experimentation and performance analysis.",
     tech: ["Python", "YOLOv8", "OpenCV", "Streamlit"],
     githubUrl: "https://github.com/ryanpateluniv/object-detector",
-    featured: true,
   },
   {
     id: "lstm-stock-prediction",
@@ -78,7 +76,6 @@ export const projects: Project[] = [
       "Built an LSTM-based time-series model predicting next-day stock direction using nine engineered technical indicators (RSI, MACD, Bollinger Bands). Implemented a custom loss function optimizing for trading profitability and applied time-series cross-validation, achieving 55% directional accuracy and 1.28% MAE.",
     tech: ["Python", "TensorFlow", "Keras", "Pandas"],
     githubUrl: "https://github.com/ryanpateluniv/stock-price-predictor",
-    featured: true
   },
   {
   id: "r-stratos",
