@@ -1,7 +1,0 @@
-.next/
-node_modules/
-.env.local
-.env
-*.tsbuildinfo
-.DS_Store
-out/

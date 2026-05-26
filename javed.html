@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fdfdf8;
+      --text: #2a2a2a; --text2: #6a6a6a; --text3: #9a9a9a;
+      --accent: #4a5240; --font: "Playfair Display", Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--cream); color: var(--text); font-family: var(--font); min-height: 100vh; opacity: 0; animation: fi 1.2s ease forwards; }
+    @keyframes fi { to { opacity: 1; } }
+    .wrapper { max-width: 640px; margin: 0 auto; padding: 80px 40px 120px; }
+    .welcome { font-size: 13px; font-style: italic; color: var(--text3); letter-spacing: 0.04em; margin-bottom: 64px; opacity: 0; animation: fi 1.8s ease 0.4s forwards; }
+    .writer-name { font-size: clamp(32px,5vw,48px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 6px; }
+    .writer-dates { font-size: 12px; color: var(--text3); font-style: italic; margin-bottom: 24px; letter-spacing: 0.04em; }
+    .writer-intro { font-size: 15px; color: var(--text2); font-style: italic; line-height: 1.8; margin-bottom: 64px; max-width: 52ch; border-left: 2px solid var(--accent); padding-left: 18px; }
+    .quotes { display: flex; flex-direction: column; }
+    .quote-block { padding: 32px 0; border-top: 0.5px solid rgba(42,42,42,0.10); }
+    .quote-block:last-child { border-bottom: 0.5px solid rgba(42,42,42,0.10); }
+    .quote-original { font-size: 18px; font-weight: 500; line-height: 1.7; font-style: italic; margin-bottom: 8px; }
+    .quote-transliteration { font-size: 13px; color: var(--text3); font-style: italic; margin-bottom: 8px; line-height: 1.6; }
+    .quote-translation { font-size: 13px; color: var(--text2); line-height: 1.7; font-style: italic; }
+    .ryan-note { margin-top: 80px; padding-top: 32px; border-top: 0.5px solid rgba(42,42,42,0.08); font-size: 11px; color: rgba(42,42,42,0.22); font-style: italic; letter-spacing: 0.04em; }
+    .back-link { display: inline-block; margin-top: 48px; font-size: 12px; color: var(--text3); text-decoration: none; font-style: italic; letter-spacing: 0.04em; border-bottom: 0.5px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .back-link:hover { color: var(--text); border-bottom-color: var(--text3); }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <p class="welcome">Itni door aaye ho. Baitho.</p>
+  <h1 class="writer-name">Javed Akhtar</h1>
+  <p class="writer-dates">1945 – Present · Poet · Lyricist · Screenwriter · Mumbai</p>
+  <p class="writer-intro">Javed Akhtar wrote like someone who had spent years arguing with the world, only to discover the quieter battle was always with himself.</p>
+  <div class="quotes">
+    <div class="quote-block">
+      <p class="quote-original">ये तेरा घर, ये मेरा घर किसी को देखना हो गर तो पहले आके माँग ले मेरी नज़र, तेरी नज़र।</p>
+      <p class="quote-transliteration">Yeh tera ghar, yeh mera ghar, Kisi ko dekhna ho gar, To pehle aake maang le, Meri nazar, teri nazar.</p>
+      <p class="quote-translation">This is your home, this is mine too. If anyone wishes to truly see it, they must first borrow your eyes, or mine.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">हम तो बचपन में भी अकेले थे सिर्फ़ दिल की गली में खेले थे।</p>
+      <p class="quote-transliteration">Hum toh bachpan mein bhi akele the, Sirf dil ki gali mein khele the.</p>
+      <p class="quote-translation">Even in childhood, I was alone. I played only in the narrow streets of my own heart.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">कभी किसी को मुकम्मल जहाँ नहीं मिलता कहीं ज़मीन तो कहीं आसमाँ नहीं मिलता।</p>
+      <p class="quote-transliteration">Kabhi kisi ko mukammal jahaan nahin milta, Kahin zameen toh kahin aasmaan nahin milta.</p>
+      <p class="quote-translation">No one is ever given a complete world. Some are missing the earth, some the sky.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">मैं कब से कितना हूँ तन्हा तुझे पता भी नहीं</p>
+      <p class="quote-transliteration">Main kab se kitna hoon tanha, tujhe pata bhi nahin</p>
+      <p class="quote-translation">You don’t even know how long I’ve been lonely. You at least have a god. I don’t even have that.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">ज़रा चेहरों की सच्चाई पे गौर कर लेना</p>
+      <p class="quote-transliteration">Zara chehron ki sachchai pe gaur kar lena, Yeh log jitne dikhte hain, utne achhe nahin.</p>
+      <p class="quote-translation">Look carefully at the honesty of faces. People are rarely as kind as they appear.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">अगर तुम यहाँ तक पहुँच ही गए हो, तो बैठो।</p>
+      <p class="quote-transliteration">Agar tum yahaan tak pahunch hi gaye ho, toh baitho. Itni door koi sirf galti se nahin aata.</p>
+      <p class="quote-translation">If you’ve made it this far, sit down. Nobody comes this far by accident.</p>
+    </div>
+  </div>
+  <div class="ryan-note">Still figuring it out how to spend more time on my site? Try clicking the other vessels and planes...</div>
+  <a href="index.html" class="back-link">← laut jao</a>
+</div>
+</body>
+</html>

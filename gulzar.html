@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gulzar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fafaf5;
+      --text: #2a2a2a; --text2: #6a6a6a; --text3: #9a9a9a;
+      --accent: #4a5240; --font: "Playfair Display", Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--cream); color: var(--text); font-family: var(--font); min-height: 100vh; opacity: 0; animation: fi 1.2s ease forwards; }
+    @keyframes fi { to { opacity: 1; } }
+    .wrapper { max-width: 640px; margin: 0 auto; padding: 80px 40px 120px; }
+    .welcome { font-size: 13px; font-style: italic; color: var(--text3); letter-spacing: 0.04em; margin-bottom: 64px; opacity: 0; animation: fi 1.8s ease 0.4s forwards; }
+    .writer-name { font-size: clamp(32px,5vw,48px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 6px; }
+    .writer-dates { font-size: 12px; color: var(--text3); font-style: italic; margin-bottom: 24px; letter-spacing: 0.04em; }
+    .writer-intro { font-size: 15px; color: var(--text2); font-style: italic; line-height: 1.8; margin-bottom: 64px; max-width: 52ch; border-left: 2px solid var(--accent); padding-left: 18px; }
+    .quotes { display: flex; flex-direction: column; }
+    .quote-block { padding: 32px 0; border-top: 0.5px solid rgba(42,42,42,0.10); }
+    .quote-block:last-child { border-bottom: 0.5px solid rgba(42,42,42,0.10); }
+    .quote-original { font-size: 18px; font-weight: 500; line-height: 1.7; font-style: italic; margin-bottom: 8px; }
+    .quote-transliteration { font-size: 13px; color: var(--text3); font-style: italic; margin-bottom: 8px; line-height: 1.6; }
+    .quote-translation { font-size: 13px; color: var(--text2); line-height: 1.7; font-style: italic; }
+    .ryan-note { margin-top: 80px; padding-top: 32px; border-top: 0.5px solid rgba(42,42,42,0.08); font-size: 11px; color: rgba(42,42,42,0.22); font-style: italic; letter-spacing: 0.04em; }
+    .back-link { display: inline-block; margin-top: 48px; font-size: 12px; color: var(--text3); text-decoration: none; font-style: italic; letter-spacing: 0.04em; border-bottom: 0.5px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .back-link:hover { color: var(--text); border-bottom-color: var(--text3); }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <p class="welcome">Bheeg gaye? Main toh pehle se bheega hua tha.</p>
+  <h1 class="writer-name">Gulzar</h1>
+  <p class="writer-dates">1934 – Present · Poet · Lyricist · Filmmaker · Mumbai</p>
+  <p class="writer-intro">Gulzar wrote like someone folding silence into paper — tender with loneliness, playful with memory, and always aware that the smallest things survive us longest.</p>
+  <div class="quotes">
+    <div class="quote-block">
+      <p class="quote-original">थोड़ा सा रफ़ू करके देखिए ना, फिर से नई सी लगेगी… ज़िंदगी ही तो है।</p>
+      <p class="quote-transliteration">Thoda sa rafu karke dekhiye na, phir se nayi si lagegi… zindagi hi toh hai.</p>
+      <p class="quote-translation">Darn it a little and mend it softly — it will feel new again. It’s only life.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">हमने अक्सर तुम्हारी राहों में रुक कर अपना ही इंतज़ार किया।</p>
+      <p class="quote-transliteration">Humne aksar tumhari raahon mein ruk kar apna hi intezaar kiya.</p>
+      <p class="quote-translation">Standing in your path so many times, I ended up waiting for myself.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">एक पुराना मौसम लौटा… याद भरी पुरवाई भी</p>
+      <p class="quote-transliteration">Ek purana mausam lauta… yaad bhari purvai bhi</p>
+      <p class="quote-translation">An old season returned, along with a wind heavy with memory. It rarely happens that loneliness arrives so beautifully too.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">कभी ज़िंदगी एक पल में गुज़र जाती है, कभी ज़िंदगी का एक पल नहीं गुज़रता।</p>
+      <p class="quote-transliteration">Kabhi zindagi ek pal mein guzar jaati hai, kabhi zindagi ka ek pal nahin guzarta.</p>
+      <p class="quote-translation">Sometimes life passes in a moment. Sometimes a single moment refuses to pass.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">हँसना ज़रूरी है… वरना दुनिया को लगेगा हमें उम्मीद अब भी है।</p>
+      <p class="quote-transliteration">Hansna zaroori hai… warna duniya ko lagega humein umeed ab bhi hai.</p>
+      <p class="quote-translation">It’s important to laugh… otherwise the world might think we still have hope.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">अच्छा हुआ तुमने ढूँढ लिया… वरना मैं तो किसी बारिश में भीगता हुआ यहीं पड़ा रहता।</p>
+      <p class="quote-transliteration">Accha hua tumne dhoond liya… warna main toh kisi baarish mein bheegta hua yahin pada rehta.</p>
+      <p class="quote-translation">Good that you found me… otherwise I would have just stayed here, getting rained on.</p>
+    </div>
+  </div>
+  <div class="ryan-note">Still figuring it out how to spend more time on my site? Try clicking the other vessels and planes...</div>
+  <a href="index.html" class="back-link">← baarish mein mat raho</a>
+</div>
+</body>
+</html>

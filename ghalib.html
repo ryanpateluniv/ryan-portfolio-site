@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghalib</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #fffdf9;
+      --text: #2a2a2a; --text2: #6a6a6a; --text3: #9a9a9a;
+      --accent: #4a5240; --font: "Playfair Display", Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--cream); color: var(--text); font-family: var(--font); min-height: 100vh; opacity: 0; animation: fi 1.2s ease forwards; }
+    @keyframes fi { to { opacity: 1; } }
+    .wrapper { max-width: 640px; margin: 0 auto; padding: 80px 40px 120px; }
+    .welcome { font-size: 13px; font-style: italic; color: var(--text3); letter-spacing: 0.04em; margin-bottom: 64px; opacity: 0; animation: fi 1.8s ease 0.4s forwards; }
+    .writer-name { font-size: clamp(32px,5vw,48px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 6px; }
+    .writer-dates { font-size: 12px; color: var(--text3); font-style: italic; margin-bottom: 24px; letter-spacing: 0.04em; }
+    .writer-intro { font-size: 15px; color: var(--text2); font-style: italic; line-height: 1.8; margin-bottom: 64px; max-width: 52ch; border-left: 2px solid var(--accent); padding-left: 18px; }
+    .quotes { display: flex; flex-direction: column; }
+    .quote-block { padding: 32px 0; border-top: 0.5px solid rgba(42,42,42,0.10); }
+    .quote-block:last-child { border-bottom: 0.5px solid rgba(42,42,42,0.10); }
+    .quote-original { font-size: 18px; font-weight: 500; line-height: 1.7; font-style: italic; margin-bottom: 8px; }
+    .quote-transliteration { font-size: 13px; color: var(--text3); font-style: italic; margin-bottom: 8px; line-height: 1.6; }
+    .quote-translation { font-size: 13px; color: var(--text2); line-height: 1.7; font-style: italic; }
+    .ryan-note { margin-top: 80px; padding-top: 32px; border-top: 0.5px solid rgba(42,42,42,0.08); font-size: 11px; color: rgba(42,42,42,0.22); font-style: italic; letter-spacing: 0.04em; }
+    .back-link { display: inline-block; margin-top: 48px; font-size: 12px; color: var(--text3); text-decoration: none; font-style: italic; letter-spacing: 0.04em; border-bottom: 0.5px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .back-link:hover { color: var(--text); border-bottom-color: var(--text3); }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <p class="welcome">Aa gaye? Achha hua. Warna raat kaise katit?</p>
+  <h1 class="writer-name">Mirza Ghalib</h1>
+  <p class="writer-dates">1797 – 1869 · Urdu & Persian Poet · Delhi</p>
+  <p class="writer-intro">Mirza Ghalib wrote as if wit and ruin were roommates — no poet has ever sounded so amused by heartbreak while still bleeding from it.</p>
+  <div class="quotes">
+    <div class="quote-block">
+      <p class="quote-original">ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے</p>
+      <p class="quote-transliteration">Hazaaron khwahishen aisi ke har khwahish pe dam nikle</p>
+      <p class="quote-translation">Thousands of desires, each worth dying for. Many were fulfilled — yet too few.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">ہم کو معلوم ہے جنت کی حقیقت لیکن</p>
+      <p class="quote-transliteration">Hum ko maloom hai jannat ki haqeeqat lekin, Dil ke khush rakhne ko Ghalib yeh khayaal achha hai</p>
+      <p class="quote-translation">I know the truth about paradise — but sometimes a beautiful lie keeps the heart alive.</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">دل ہی تو ہے نہ سنگ و خشت، درد سے بھر نہ آئے کیوں</p>
+      <p class="quote-transliteration">Dil hi toh hai na sang-o-khisht, dard se bhar na aaye kyun</p>
+      <p class="quote-translation">It is only a heart, not brick or stone — why shouldn’t it fill with pain?</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">رگوں میں دوڑتے پھرنے کے ہم نہیں قائل</p>
+      <p class="quote-transliteration">Ragon mein daudte phirne ke hum nahin qaayil, Jab aankh hi se na tapka toh phir lahu kya hai</p>
+      <p class="quote-translation">I do not care for blood that merely runs through veins — if it cannot rise to the eyes, what kind of blood is it?</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">قیدِ حیات و بندِ غم، اصل میں دونوں ایک ہیں</p>
+      <p class="quote-transliteration">Qaid-e-hayaat o band-e-gham, asl mein dono ek hain</p>
+      <p class="quote-translation">The prison of life and the prison of sorrow are, in truth, the same. Why should a man expect freedom from grief before death?</p>
+    </div>
+    <div class="quote-block">
+      <p class="quote-original">اگر میری غزلیں کسی اجنبی کی رات خراب کر رہی ہیں، تو سمجھو میں اب بھی زندہ ہوں۔</p>
+      <p class="quote-transliteration">Agar meri ghazlein kisi ajnabi ki raat kharaab kar rahi hain, toh samjho main ab bhi zinda hoon.</p>
+      <p class="quote-translation">If my verses are still ruining a stranger’s night somewhere, then I suppose I am still alive.</p>
+    </div>
+  </div>
+  <div class="ryan-note">Still figuring it out how to spend more time on my site? Try clicking the other vessels and planes...</div>
+  <a href="index.html" class="back-link">← wapas</a>
+</div>
+</body>
+</html>
